@@ -20,7 +20,7 @@ public class ShapeUtils {
             System.out.println("Sphere Volume: " + sphere.volume());
     };
             
-         public void increaseRectangle(Shape[] shapeArray, double incrementLength) {
+         public void increaseRectanglelength(Shape[] shapeArray, double incrementLength) {
                 for (int i = 0; i < shapeArray.length; i++) {
                     if (shapeArray[i] instanceof Rectangle) {
                         Rectangle rect = (Rectangle) shapeArray[i]; 
