@@ -2,11 +2,11 @@ public interface Drawable {
     void draw();
 }
 public abstract class Shape implements Drawable {
-    private String Name;
+    private String name;
 
 }
-public Shape(String Name){
-   this.Name = Name;
+public Shape(String name){
+   this.name = name;
 };
 public double area(){
     return area;
