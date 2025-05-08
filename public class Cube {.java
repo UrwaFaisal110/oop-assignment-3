@@ -11,4 +11,5 @@ public class Cube {
     double area(){
         return 6*l*l;
     }
-}
+}:
+
