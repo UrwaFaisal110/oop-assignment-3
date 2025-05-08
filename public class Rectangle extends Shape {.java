@@ -33,10 +33,10 @@ public Point getTopLeft() {
         return bottomRight;
     }
 
+    
     @Override
     public void draw() {
-        System.out.println("Drawing a rectangle at top-left: (" + topLeft.getX() + "," + topLeft.getY() +
-                           ") and bottom-right: (" + bottomRight.getX() + "," + bottomRight.getY() + ")");
+        System.out.println("Drawing Rectangle");
     }
 }
 

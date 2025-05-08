@@ -33,31 +33,22 @@ public class ShapeUtils {
              
         };
 
+       public void checkAllRectangleIntersections(Shape[] shapes) {
+        for (int i = 0; i < shapes.length; i++) {
+            if (shapes[i] instanceof Rectangle) {
+                Rectangle r1 = (Rectangle) shapes[i];
 
+                for (int j = i + 1; j < shapes.length; j++) {
+                    if (shapes[j] instanceof Rectangle) {
+                        Rectangle r2 = (Rectangle) shapes[j];
 
-
-    public Class ShapeUtils() {
-        
-    }
-
-    public boolean RectanglesIntersecting(Rectangle rect1, Rectangle rect2) {
-       
-        Point topLeft1 = rect1.getTopLeft();
-        Point bottomRight1 = rect1.getBottomRight();
-
-   
-        Point topLeft2 = rect2.getTopLeft();
-        Point bottomRight2 = rect2.getBottomRight();
-
-       
-        if (topLeft1.getX() == bottomRight2.getX() || topLeft2.getX() == bottomRight1.getX()) {
-            return true; 
-
-        if (topLeft1.getY() == bottomRight2.getY() || topLeft2.getY() == bottomRight1.getY()) {
-            return true; 
+                        boolean result = RectanglesIntersecting(r1, r2);
+                        System.out.println("Rectangle " + i + " and Rectangle " + j +
+                                (result ? " intersect." : " do NOT intersect."));
+                    }
+                }
+            }
         }
-
-       return false;
     }
 }
   
