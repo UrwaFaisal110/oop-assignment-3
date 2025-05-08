@@ -10,4 +10,4 @@ double getRadius(){
 };
 double area(){
     return 3.142 * r * r;
-};
+}};
