@@ -7,5 +7,5 @@ public class Sphere {
     double volume(){
         return (4/3) * 3.142 *radius*radius*radius;
     }
-    double area
+    
 }
